@@ -1,1 +1,1 @@
-"# sample-rn-codepush" 
+# sample-rn-codepush
