@@ -7,11 +7,17 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "clean": "cd android && gradlew clean && cd ..",
+    "uninstall": "adb uninstall com.mytestapp"
   },
   "dependencies": {
+    "@react-navigation/native": "^6.0.2",
     "react": "17.0.1",
-    "react-native": "0.64.1"
+    "react-native": "0.64.1",
+    "react-native-code-push": "^7.0.2",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-screens": "^3.7.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
