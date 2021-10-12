@@ -7,6 +7,7 @@
  */
 
 import React from 'react';
+import codePush from 'react-native-code-push';
 import { NavigationContainer } from '@react-navigation/native';
 import MainTabNavigator from 'navigator/MainTabNavigator';
 
@@ -18,4 +19,6 @@ const App = () => {
   );
 };
 
-export default App;
+let codePushOptions = { checkFrequency: codePush.CheckFrequency.ON_APP_RESUME };
+
+export default codePush(codePushOptions)(App);
