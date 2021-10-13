@@ -5,7 +5,7 @@ class ProfileScreen extends Component {
   render() {
     return (
       <View>
-        <Text> Profile </Text>
+        <Text> Profile Screen </Text>
       </View>
     );
   }

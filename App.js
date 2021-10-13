@@ -19,6 +19,6 @@ const App = () => {
   );
 };
 
-let codePushOptions = { checkFrequency: codePush.CheckFrequency.ON_APP_RESUME };
+let codePushOptions = { checkFrequency: codePush.CheckFrequency.MANUAL };
 
 export default codePush(codePushOptions)(App);

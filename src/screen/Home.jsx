@@ -1,7 +1,23 @@
 import React, { Component } from 'react';
-import { FlatList, SafeAreaView, StatusBar, StyleSheet, Text, View } from 'react-native';
+import codePush from 'react-native-code-push';
+import {
+  FlatList,
+  SafeAreaView,
+  StatusBar,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 
 class HomeScreen extends Component {
+  componentDidMount() {
+    codePush.sync({
+      updateDialog: { title: 'An update is available!' },
+      installMode: codePush.InstallMode.IMMEDIATE,
+    });
+    console.log('debug');
+  }
+
   render() {
     const DATA = [
       {
