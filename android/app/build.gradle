@@ -137,7 +137,7 @@ android {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
-        versionName "1.0"
+        versionName "1.1"
     }
     splits {
         abi {
@@ -157,7 +157,7 @@ android {
     }
     buildTypes {
         debug {
-            resValue "string", "CodePushDeploymentKey", '""'
+            resValue "string", "CodePushDeploymentKey", '"RI68rbtq-GuamC1rG0joXrxHNkd11ynv3rz1n"'
             signingConfig signingConfigs.debug
         }
         releaseStaging{
